@@ -1,0 +1,171 @@
+/* GLOBAL
+----------------------------------------------------------------------------------------*/
+:root {
+    --off-white: #d1d3d4;
+    --off-black: #231f20;
+    --my-yellow: #F4EA65;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+}
+
+header, main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+body {
+    font-family: "karol-sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.4;
+    color: var(--off-white);
+    background-color: var(--off-black);
+}
+
+h1 {
+    font-family: nexa-rust-sans-black-2, sans-serif;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+/* HEADER
+----------------------------------------------------------------------------------------*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    max-height: 50px;
+    padding: 8px;
+}
+
+header nav a {
+    padding: 30px;
+    text-decoration: none;
+    color:var(--off-white);
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--my-yellow);
+}
+
+.hero { 
+    background-color: var(--off-white);
+    height: 200px;
+}
+
+
+input {
+    width: 100%;
+}
+
+input[type=text], input[type=email] {
+    background-color: var(--off-black);
+    border-width: 2px;
+    border-color: var(--off-white);
+    padding: 5px;
+}
+
+/* INDEX
+----------------------------------------------------------------------------------------*/
+.band-info {
+    margin: auto;
+    max-width: 65ch;
+    padding: 10px;
+}
+
+.album-cover {
+    max-width: 65ch;
+    display: flex;
+}
+
+.stream-links {
+    list-style: none;
+    padding: 10px;
+}
+
+.stream-links img {
+    width: 45px;
+}
+
+.stream-links li {
+    display: inline-block;
+}
+
+.stream-links a:hover {
+    opacity: 0.5;
+}
+
+
+
+/* ALBUM
+----------------------------------------------------------------------------------------*/
+.album-jacket img {
+    max-width: 500px;
+}
+
+.tracklist {
+    margin: auto;
+    max-width: 65ch;
+    padding: 10px;
+}
+
+/* MERCH
+----------------------------------------------------------------------------------------*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 100ch;
+    margin: auto;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* FOOTER
+----------------------------------------------------------------------------------------*/
+.socials {
+    list-style: none;
+    padding: 0;
+}
+
+.socials img {
+    width: 32px;
+}
+
+.socials li {
+    display: inline-block;
+}
+
+.socials a:hover {
+    opacity: 0.5;
+}
+
+footer {
+    line-height: 0.8;
+}
+
+footer nav a{
+    text-decoration: none;
+    color:var(--off-white);
+    font-size: 2rem;
+}

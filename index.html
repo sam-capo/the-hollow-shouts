@@ -1,15 +1,87 @@
-<!-- •	Introduction to the artist or band, providing a brief background or story that connects with the album theme.
-     •	A featured image or cover art of the album, serving as the main visual focus.
-     •	A prominent link to listen to the album (e.g., a mock streaming button) and/or view more details. -->
-     
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ydn5oex.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>The Hollow Shouts</title>
 </head>
+
 <body>
-    <h1>The Hollow Shouts</h1>
+    <header>
+        <a href="index.html">
+            <img src="images/logo.png" alt="Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="album.html">Album</a>
+            <a href="merch.html">Merch</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <!-- this will be just an images, so just css? -->
+    </div>
+
+    <div class="band-info">
+        <h1>The Hollow Shouts</h1>
+        <p>The Hollow Shouts are an up-and-coming Irish alternative rock band originating from Dublin, Ireland. Their debut album is set to be released 
+            in December of 2025 following their single title track “Echoes on the Liffey”. They note key influences from the gothic post-punk movement in 
+            Europe, echoing the sounds of gritty guitars and heavy basslines. While their lyrics are rooted in their experiences growing up in Ireland, 
+            exploring topics of alienation, faith, and modern Dublin.</p>
+        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero 
+            eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        
+        <img class="album-cover" src="images/album-cover.jpg" alt="Echoes of the Liffey album cover">
+        
+        <ul class="stream-links">
+            <li class="spotify"> <a href="https://open.spotify.com/" target="_blank"> <img src="images/spotify-placeholder.png" alt="Spotify"></a></li>
+            <li class="apple"> <a href="https://music.apple.com/us/new" target="_blank"> <img src="images/apple-placeholder.png" alt="Apple Music"></a></li>
+            <li class="youtube"> <a href="https://music.youtube.com/" target="_blank"> <img src="images/yt-placeholder.png" alt="YouTube Music"></a></li>
+            <li class="amazon"> <a href="https://music.amazon.ca/" target="_blank"> <img src="images/amazon-placeholder.png" alt="Amazon Music"></a></li>
+        </ul>
+
+        <div class="newsletter">
+             <h2>Sign up for Updates</h2>
+            <form>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname">
+                </div>
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname">
+                </div>
+                <div>
+                    <label for="country">Country</label>
+                    <input type="text" id="country">
+                </div>
+                <div>
+                    <button type="submit">Sign up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <ul class="socials">
+                <li class="ig"> <a href="https://www.instagram.com/" target="_blank"> <img src="images/icon-ig.png" alt="Instagram"></a></li>
+                <li class="youtube"> <a href="https://www.youtube.com/" target="_blank"> <img src="images/icon-youtube.png" alt="Youtube"></a></li>
+                <li class="x"> <a href="https://www.x.com/" target="_blank"> <img src="images/x.png" alt="X"></a></li>
+        </ul>
+        <nav>
+            <a href="">Terms</a> |
+            <a href="">Privacy</a> |
+            <a href="">Return Policy</a> |
+            <a href="">Help & FAQs</a> |
+            <a href="">Contact</a> 
+        </nav>
+        <p>© 2025, The Hollow Shouts</p>
+    </footer>
 </body>
 </html>
