@@ -3,7 +3,7 @@
 :root {
     --off-white: #d1d3d4;
     --off-black: #231f20;
-    --my-yellow: #F4EA65;
+    --my-yellow: #EBE458;
 }
 
 html {
@@ -63,25 +63,16 @@ nav a:hover {
     color: var(--my-yellow);
 }
 
+
+/* INDEX
+----------------------------------------------------------------------------------------*/
+/* HERO ------------- */
 .hero { 
     background-color: var(--off-white);
     height: 200px;
 }
 
-
-input {
-    width: 100%;
-}
-
-input[type=text], input[type=email] {
-    background-color: var(--off-black);
-    border-width: 2px;
-    border-color: var(--off-white);
-    padding: 5px;
-}
-
-/* INDEX
-----------------------------------------------------------------------------------------*/
+/* BAND INFO ------------ */
 .band-info {
     margin: auto;
     max-width: 65ch;
@@ -93,6 +84,7 @@ input[type=text], input[type=email] {
     display: flex;
 }
 
+/* STREAMING ------------ */
 .stream-links {
     list-style: none;
     padding: 10px;
@@ -110,12 +102,40 @@ input[type=text], input[type=email] {
     opacity: 0.5;
 }
 
+/* NEWSLETTER ---------- */
+input {
+    width: 97%;
+}
 
+input[type=text], input[type=email] {
+    background-color: var(--off-black);
+    border-width: 2px;
+    border-color: var(--off-white);
+    padding: 5px;
+}
+
+.newsletter button {
+    width: 100%;
+    line-height: .75em;
+    letter-spacing: 0.05em;
+    border: none;
+    padding: 10px 10px;
+    margin: 20px 0;
+    display: block;
+    font-size: 2rem;
+}
+
+.newsletter button:hover {
+    background-color: var(--my-yellow);
+}
 
 /* ALBUM
 ----------------------------------------------------------------------------------------*/
 .album-jacket img {
-    max-width: 500px;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    padding: 4em;
 }
 
 .tracklist {
@@ -129,10 +149,10 @@ input[type=text], input[type=email] {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
     max-width: 100ch;
-    margin: auto;
+    margin: 40px auto;
 }
 
 .grid-item {
@@ -140,6 +160,29 @@ input[type=text], input[type=email] {
     flex-direction: column;
 }
 
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content p, h3 {
+    margin: .5rem;
+}
+
+.grid button {
+    padding: 10px 10px;
+    line-height: 1em;
+    letter-spacing: 0.05em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+
+.grid button:hover {
+    background-color: var(--my-yellow);
+}
 
 /* FOOTER
 ----------------------------------------------------------------------------------------*/
@@ -162,6 +205,7 @@ input[type=text], input[type=email] {
 
 footer {
     line-height: 0.8;
+    padding: 0.5rem 0;
 }
 
 footer nav a{
