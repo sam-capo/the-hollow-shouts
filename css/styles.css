@@ -69,7 +69,11 @@ nav a:hover {
 /* HERO ------------- */
 .hero { 
     background-color: var(--off-white);
-    height: 200px;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    min-height: 300px;
+    display: flex;
+    align-items: center
 }
 
 /* BAND INFO ------------ */
@@ -88,6 +92,7 @@ nav a:hover {
 .stream-links {
     list-style: none;
     padding: 10px;
+    text-align: center;
 }
 
 .stream-links img {
@@ -103,6 +108,10 @@ nav a:hover {
 }
 
 /* NEWSLETTER ---------- */
+.newsletter h2 {
+    text-align: center;
+}
+
 input {
     width: 97%;
 }
