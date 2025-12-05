@@ -107,6 +107,12 @@ nav a:hover {
     opacity: 0.5;
 }
 
+/* LYRIC VIDEO ---------- */
+/* iframe {
+    max-width: 65ch;
+    display: flex;
+} */
+
 /* NEWSLETTER ---------- */
 .newsletter h2 {
     text-align: center;
